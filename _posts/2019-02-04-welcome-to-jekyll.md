@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Deneme deneme
 title:  "Welcome to devlopr-jekyll !"
 summary: "Getting Started using devlopr-jekyll"
 author: johndoe
