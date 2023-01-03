@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jekyll
+title: Web Design
 permalink: /blog/categories/jekyll/
 ---
 

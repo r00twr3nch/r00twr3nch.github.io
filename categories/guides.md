@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Guides
+title: Siber Güvenlik
 permalink: /blog/categories/guides/
 ---
 
