@@ -49,9 +49,9 @@ author_work_experiences:
 # Education
 author_education_details:
               - college_logo: mit.png
-                college_name: MIT
+                college_name: Yasar University
                 college_url: https://mit.org
-                college_degree: CS Engineer
+                college_degree: Software Engineer
                 description: Bachelor of Technology
                 visibility: true
 
@@ -61,12 +61,12 @@ author_project_details:
                 project_title: Gamers Hub
                 project_description: A Platform built for Gamers and Game Devs
                 project_url: https://gamershub.in
-                visibility: true
+                visibility: false
               - project_thumbnail: hack4r.PNG
                 project_title: Hack4r
                 project_description: A Platform built for Hackers and Penetration Testers
                 project_url: https://hack4r.com
-                visibility: true
+                visibility: false
 
 # social links
 twitter_username: johndoe
