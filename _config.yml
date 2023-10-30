@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yunus Emre Durak/ Personal Blog"
+title                    : "WR3NCH"
 title_separator          : "-"
 name                     : &name "Yunus Emre Durak"
 description              : &description "Cyber Security Researcher"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Yunus Emre Durak"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Location"
