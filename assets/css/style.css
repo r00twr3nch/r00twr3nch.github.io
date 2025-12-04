@@ -259,6 +259,26 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* --- BLOG BÖLÜMÜ: KARTLAR --- */
+/* --- KATEGORİ ETİKETİ TASARIMI --- */
+.category-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 159, 67, 0.15); /* Vurgu renginin şeffaf hali */
+    color: var(--accent-color); /* Turuncu yazı */
+    border: 1px solid rgba(255, 159, 67, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Karta hover yapınca etiket parlasın */
+.blog-card:hover .category-badge {
+    background-color: var(--accent-color);
+    color: #121212; /* Arka plan koyu olduğu için yazı siyah olsun */
+}
 .section-subtitle {
     margin-top: -1.5rem;
     margin-bottom: 3rem;

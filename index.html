@@ -98,11 +98,17 @@ title: Home
         <div class="blog-img" style="background-image: url('{{ post_image }}');"></div>
         
         <div class="blog-content">
-            <span class="blog-date">{{ post.date | date: "%d %b %Y" }}</span>
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
+    
+    <div class="blog-meta" style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+        <span class="blog-date" style="margin-right: 15px;">{{ post.date | date: "%d %b %Y" }}</span>
+        
+        <span class="category-badge">{{ post.category }}</span>
+    </div>
+
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+</div>
     </article>
     {% endfor %}
 </div>
