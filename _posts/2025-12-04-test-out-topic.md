@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Klavyeden Uzakta: Neden Bazen 'Offline' Olmalıyız?"
-date: 2025-12-06
+date: 2025-12-04
 category: "Yaşam"
 image: "https://images.unsplash.com/photo-1444491741275-3747c53c99b4?q=80&w=1974&auto=format&fit=crop"
 excerpt: "Sürekli siyah ekranlara ve terminal kodlarına bakmak zihni yorabiliyor. İşte benim 'Restart' atma yöntemim ve analog yaşamım."
