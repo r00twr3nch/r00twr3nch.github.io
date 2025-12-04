@@ -1,171 +1,109 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kişisel Portföy & Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: Home
+---
 
-    <div class="main-container">
-        <header class="sidebar">
-            <div class="profile-container">
-                <img src="profile.png" alt="Profil Fotoğrafı" class="profile-img">
-                <h1 class="name">Yunus Emre Durak</h1>
-                <p class="title">Software Engineer |  Cyber Security Researcher</p>
+<section id="about" class="section">
+    <h2 class="section-title">Hello, who am i?</h2>
+    <p class="intro-text">
+        I am Yunus Emre Durak, a software engineering student.
+    </p>
+    <p>
+        Starting from my high school years, I took a passionate step into the world of software and later into the realm of cybersecurity. My current education is in English, and I am striving to maximize both my technical and language skills. Alongside these experiences, my commitment to enhancing my technical skills and enthusiasm for teamwork showcases my potential in the field of software engineering. My goal is to contribute to the world of technology by generating innovative and impactful solutions, both individually and as part of a team.
+    </p>
+
+    <div class="skills-container">
+            <h3>Skills</h3>
+            <div class="skill-tags">
+                <span>Linux System Management</span>
+                <span>C/C++/C#</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>SIEM Tools</span>
+                <span>ASP.NET</span>
+                <span>Analytical Thinking</span>
+                <span>Pentesting/Red Teaming</span>
+                <span>AI Training</span>
             </div>
-
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
-                    <li><a href="#cv"><i class="fas fa-briefcase"></i> CV & Experiences</a></li>
-                    <li><a href="#blog"><i class="fas fa-pen-nib"></i> Blog</a></li>
-                </ul>
-            </nav>
-
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </header>
-
-        <main class="content">
-            
-            <section id="about" class="section">
-                <h2 class="section-title">Hello, who am i?</h2>
-                <p class="intro-text">
-		 I am Yunus Emre Durak, a software engineering student.                 
-		</p>
-                <p>
-                    Starting from my high school years, I took a
-passionate step into the world of software and later into the realm of cybersecurity. My current education is in
-English, and I am striving to maximize both my technical and language skills. Alongside these experiences,
-my commitment to enhancing my technical skills and enthusiasm for teamwork showcases my potential in the
-field of software engineering. My goal is to contribute to the world of technology by generating innovative and
-impactful solutions, both individually and as part of a team.
-
-                </p>
-
-                <div class="skills-container">
-                     <h3>Skills</h3>
-                     <div class="skill-tags">
-                         <span>Linux System Management</span>
-                         <span>C/C++/C#</span>
-                         <span>Python</span>
-                         <span>Java</span>
-                         <span>SIEM Tools and Programs</span>
-                         <span>ASP.NET</span>
-                         <span>Analytical Thinking</span>
-                         <span>Pentesting/Red Teaming</span>
-                         <span>AI Training</span>
-
-
-
-
-                     </div>
-                </div>
-            </section>
-
-            <section id="cv" class="section">
-                <h2 class="section-title">Experience & Education Path</h2>
-
-                
-                <div class="timeline">
-			 <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jun 2025 - Aug 2025</div>
-                        <div class="timeline-content">
-                            <h3>Software Engineering Intern</h3>
-                            <h4>Tostbang Teknoloji, Diyarbakır</h4>
-                            <p>Supported the development of corporate projects as part of the backend team. Contributed to API development, database design, and performance optimization. Participated in code reviews and applied software development standards. Improved teamwork and collaboration skills through active involvement in project workflows.</p>
-                        </div>
-                    </div>
-
-		     <div class="timeline-item education">
-                        <div class="timeline-dot education-dot"></div>
-                        <div class="timeline-date">Sep 2021 - Current</div>
-                        <div class="timeline-content">
-                            <h3>Associate of Science: Software Engineering (English)</h3>
-                            <h4>Yasar University</h4>
-                            <p>By conducting comprehensive security audits, I implemented preventive measures for the confidentiality of customer data and the security of payment processes in e-commerce sites. With the aim of ensuring compliance with industry security standards, I organized and improved security protocols on e-commerce sites. By conducting detailed vulnerability research on WordPress themes and plugins, I identified critical security vulnerabilities to enhance the overall security of the platform. Leveraging my specialized expertise in security, I optimized the security of WordPress sites with the solutions I developed, providing protection against potential attacks</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jun 2021 - Aug 2021</div>
-                        <div class="timeline-content">
-                            <h3>IT ERP Support</h3>
-                            <h4>EFG Energy Electricty Ve Transformer Co. Ltd., Diyarbakır</h4>
-                            <p>I provided a detailed description of network components such as switches, hubs,routers, modems, and firewalls, ensuring the healthy functioning of the company's network infrastructure. During this process, I analyzed communication between devices within the network, provided recommendations to enhance efficiency, and optimized network performance with solutions I developed. Through my work on camera security systems, I digitized physical security measures, strengthening the company's security infrastructure. Based on research findings, I proposed improvement suggestions for existing systems, minimizing security vulnerabilities, and developed protection strategies for company assets. I addressed issues with employees' computers and other devices, delivering quick and effective solutions. Cyber Security Analyst I provided technical support to resolve problems arising in computer hardware and software, thereby increasing employee productivity. In my spare time, I learned the C programming language, enhancing my knowledge and skills in this field. Leveraging my skills in the C programming language, I expanded my understanding of software development and effectively applied this knowledge to company projects.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jun 2020 - Aug 2022</div>
-                        <div class="timeline-content">
-                            <h3>Information Security Intern</h3>
-                            <h4>Normsight Cyber Security</h4>
-                            <p>By conducting comprehensive security audits, I implemented preventive measures for the confidentiality of customer data and the security of payment processes in e-commerce sites. With the aim of ensuring compliance with industry security standards, I organized and improved security protocols on e-commerce sites. By conducting detailed vulnerability research on WordPress themes and plugins, I identified critical security vulnerabilities to enhance the overall security of the platform. Leveraging my specialized expertise in security, I optimized the security of WordPress sites with the solutions I developed, providing protection against potential attacks</p>
-                        </div>
-                    </div>
-                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jun 2019 - Aug 2019</div>
-                        <div class="timeline-content">
-                            <h3>Jr Front-End Developer</h3>
-                            <h4>3KCREATIVE</h4>
-                            <p>I have developed professionally in HTML, CSS, and JavaScript, creating userfriendly and aesthetically pleasing web pages. I gained experience in customizing WordPress themes, enhancing their visual design to improve the user experience. Through my research in web security, I played an active role in identifying and mitigating security risks in projects.
-With a security-focused mindset, I enhanced site security and formulated protection strategies through the solutions I developed. My strong commitment to teamwork and effective communication skills allowed me to efficiently manage team dynamics in projects. Collaborating within the team, leveraging diverse perspectives, and sharing responsibilities, I successfully contributed to the completion of various projects.
-</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="blog" class="section blog-section">
-                <h2 class="section-title">Son Yazılarım</h2>
-                <p class="section-subtitle">Teknoloji ve tasarım üzerine karanlık mod düşünceleri.</p>
-
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-img" style="background-image: url('https://via.placeholder.com/400x250/333333');"></div>
-                        <div class="blog-content">
-                            <span class="blog-date">5 Aralık 2025</span>
-                            <h3>Yeni Koyu Tema Tasarımı Nasıl Yapıldı?</h3>
-                            <p>Bu portföy sitesinin yeni koyu temasının arkasındaki CSS değişkenleri ve tasarım kararları.</p>
-                            <a href="blog-post.html" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                         <div class="blog-img" style="background-image: url('https://via.placeholder.com/400x250/555555');"></div>
-                        <div class="blog-content">
-                            <span class="blog-date">20 Kasım 2025</span>
-                            <h3>Yazılımcı Olarak Üretkenlik</h3>
-                            <p>Daha kısa sürede daha kaliteli kod yazmak için kullandığım araçlar.</p>
-                            <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-        </main>
     </div>
+</section>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+<section id="cv" class="section">
+    <h2 class="section-title">Experience & Education Path</h2>
+    
+    <div class="timeline">
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2025 - Aug 2025</div> <div class="timeline-content">
+                <h3>Software Engineering Intern</h3>
+                <h4>Tostbang Teknoloji, Diyarbakır</h4>
+                <p>Supported the development of corporate projects as part of the backend team. Contributed to API development, database design, and performance optimization. Participated in code reviews and applied software development standards.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item education">
+            <div class="timeline-dot education-dot"></div>
+            <div class="timeline-date">Sep 2021 - Current</div>
+            <div class="timeline-content">
+                <h3>Associate of Science: Software Engineering (English)</h3>
+                <h4>Yasar University</h4>
+                <p>Starting from high school, focused on software fundamentals and currently specializing in cybersecurity and software engineering principles.</p>
+                </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2021 - Aug 2021</div>
+            <div class="timeline-content">
+                <h3>IT ERP Support</h3>
+                <h4>EFG Energy Electricty Ve Transformer Co. Ltd.</h4>
+                <p>Provided detailed description of network components ensuring healthy functioning of the company's network infrastructure. Analyzed communication between devices, provided efficiency recommendations.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2020 - Aug 2022</div>
+            <div class="timeline-content">
+                <h3>Information Security Intern</h3>
+                <h4>Normsight Cyber Security</h4>
+                <p>Conducted comprehensive security audits and implemented preventive measures for data confidentiality. Organized and improved security protocols on e-commerce sites ensuring compliance with standards.</p>
+            </div>
+        </div>
+
+         <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2019 - Aug 2019</div>
+            <div class="timeline-content">
+                <h3>Jr Front-End Developer</h3>
+                <h4>3KCREATIVE</h4>
+                <p>Developed professionally in HTML, CSS, and JavaScript. Gained experience in customizing WordPress themes and enhancing visual designs.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="blog" class="section blog-section">
+    <h2 class="section-title">Latest Articles</h2>
+    <p class="section-subtitle">Thoughts on technology and cybersecurity.</p>
+
+    <div class="blog-grid">
+        {% for post in site.posts limit:4 %}
+        <article class="blog-card">
+            <div class="blog-img" style="background-image: url('{{ post.image | default: 'https://via.placeholder.com/400x250/333' }}');"></div>
+            <div class="blog-content">
+                <span class="blog-date">{{ post.date | date: "%d %b %Y" }}</span>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    
+    {% if site.posts.size == 0 %}
+    <p style="text-align:center; color:#666;">No blog posts found yet.</p>
+    {% endif %}
+</section>

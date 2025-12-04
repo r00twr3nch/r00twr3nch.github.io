@@ -1,0 +1,21 @@
+<header class="sidebar">
+    <div class="profile-container">
+        <img src="{{ site.baseurl }}/assets/img/profile.png" alt="{{ site.title }}" class="profile-img">
+        <h1 class="name">{{ site.title }}</h1>
+        <p class="title">{{ site.description }}</p>
+    </div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="{{ site.baseurl }}/#about"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="{{ site.baseurl }}/#cv"><i class="fas fa-briefcase"></i> CV & Experiences</a></li>
+            <li><a href="{{ site.baseurl }}/#blog"><i class="fas fa-pen-nib"></i> Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="social-links">
+        <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</header>
