@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Yazısı Başlığı - Adınız Soyadınız</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ana sayfaya dönüş butonu */
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        .back-to-home i { margin-right: 10px; }
+        .back-to-home:hover { color: var(--accent-color); }
+
+        /* Blog içeriği stilleri */
+        .blog-article { max-width: 800px; }
+        .article-header { margin-bottom: 3rem; }
+        .article-title { font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.2; }
+        .article-meta { color: var(--text-muted); font-size: 0.9rem; }
+        .article-featured-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+        .article-content p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+        .article-content h2 { font-size: 1.8rem; margin-top: 3rem; margin-bottom: 1rem; }
+        .article-content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .article-content li { margin-bottom: 0.5rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="sidebar">
+            <div class="profile-container">
+                <img src="https://via.placeholder.com/150" alt="Profil Fotoğrafı" class="profile-img">
+                <h1 class="name">Adınız Soyadınız</h1>
+                <p class="title">Yaratıcı Geliştirici & Tasarımcı</p>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html#about"><i class="fas fa-user"></i> Hakkımda</a></li>
+                    <li><a href="index.html#cv"><i class="fas fa-briefcase"></i> CV & Deneyim</a></li>
+                    <li><a href="index.html#blog"><i class="fas fa-pen-nib"></i> Blog</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </header>
+
+        <main class="content">
+            
+            <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
+
+            <article class="blog-article">
+                <header class="article-header">
+                    <h1 class="article-title">Yeni Koyu Tema Tasarımı Nasıl Yapıldı?</h1>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar-alt"></i> 5 Aralık 2025</span>
+                        <span style="margin-left: 15px;"><i class="far fa-folder"></i> Tasarım / CSS</span>
+                    </div>
+                </header>
+
+                <img src="https://via.placeholder.com/800x400/333333" alt="Blog Görseli" class="article-featured-img">
+
+                <div class="article-content">
+                    <p>Buraya blog yazınızın giriş paragrafı gelecek. Koyu tema üzerinde okuma deneyiminin nasıl iyileştirildiğinden bahsedebilirsiniz. CSS değişkenlerinin (CSS custom properties) gücünü kullanarak renk yönetimini nasıl sağladığınızı anlatın.</p>
+                    
+                    <h2>Karanlık Modun Avantajları</h2>
+                    <p>Karanlık mod sadece estetik bir tercih değildir, aynı zamanda uzun saatler ekran başında çalışanlar için göz yorgunluğunu azaltmaya yardımcı olur. Özellikle düşük ışıklı ortamlarda içeriğin daha rahat tüketilmesini sağlar.</p>
+                    
+                    <ul>
+                        <li>Göz yorgunluğunu azaltır.</li>
+                        <li>OLED ekranlarda pil ömrüne katkı sağlar.</li>
+                        <li>İçeriğe odaklanmayı kolaylaştırır.</li>
+                        <li>Daha profesyonel ve modern bir görünüm sunar.</li>
+                    </ul>
+
+                    <h2>CSS Değişkenleri ile Renk Yönetimi</h2>
+                    <p>Bu temayı oluştururken <code>:root</code> sözde sınıfı içinde renk değişkenleri tanımladık. Bu sayede tek bir yerden tüm sitenin renk paletini kontrol edebiliyoruz. Örneğin, vurgu rengini değiştirmek istediğimizde sadece <code>--accent-color</code> değişkenini güncellememiz yeterli oluyor.</p>
+                    
+                    <p>Blog yazılarınızı bu şekilde HTML formatında yazarak, Jekyll gibi sistemlere ihtiyaç duymadan statik ama şık bir blog tutabilirsiniz.</p>
+                </div>
+
+            </article>
+
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+/* --- GENEL AYARLAR & KOYU TEMA DEĞİŞKENLERİ --- */
+:root {
+    /* KOYU TEMA RENK PALETİ */
+    --bg-main: #121212;       /* Ana arka plan (Çok koyu gri/siyah) */
+    --bg-sidebar: #0a0a0a;    /* Sidebar arka planı (Ana arka plandan biraz daha koyu) */
+    --bg-card: #1e1e1e;       /* Kartların arka planı (Ana arka plandan biraz daha açık) */
+    
+    --text-main: #e0e0e0;     /* Ana metin rengi (Kırık beyaz, göz yormaz) */
+    --text-muted: #a0a0a0;    /* İkincil metinler, tarihler vs. */
+    --text-heading: #ffffff;  /* Başlıklar (Tam beyaz) */
+
+    --accent-color: #ff9f43;  /* Vurgu rengi (Daha sıcak bir turuncu/altın, koyuda iyi durur) */
+    --border-color: #333333;  /* Çizgiler ve kenarlıklar için */
+
+    --sidebar-width: 300px;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    background-color: var(--bg-main); /* Koyu arka plan */
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-heading); /* Başlıklar beyaz */
+}
+
+/* --- ANA DÜZEN --- */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- SOL TARAF: SIDEBAR (KOYU) --- */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-sidebar); /* Koyu sidebar */
+    color: var(--text-main);
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 10;
+    border-right: 1px solid var(--border-color); /* İnce bir ayırıcı çizgi */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 159, 67, 0.2); /* Hafif bir parlama efekti */
+}
+
+.name {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    margin-bottom: 1.5rem;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li a i {
+    margin-right: 10px;
+    width: 20px;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--accent-color);
+}
+.navigation ul li a:hover i {
+    transform: translateX(5px);
+}
+
+.social-links {
+    margin-top: 3rem;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- SAĞ TARAF: İÇERİK ALANI (KOYU) --- */
+.content {
+    margin-left: var(--sidebar-width);
+    flex: 1;
+    padding: 5rem 7rem;
+}
+
+.section {
+    margin-bottom: 4rem; /* Boşluğu yarı yarıya azalttım (8rem -> 4rem) */
+    min-height: auto;    /* Zorunlu yüksekliği kaldırdım, içeriğin bittiği yerde biter */
+    padding-top: 2rem;
+    scroll-margin-top: 2rem; /* Linke tıklandığında başlığın tam üste yapışmasını engeller */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+/* --- HAKKIMDA BÖLÜMÜ --- */
+.intro-text {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-heading);
+}
+
+.skills-container h3 {
+    margin-top: 1.5rem; /* Eskiden 2.5rem idi, azalttım */
+    margin-bottom: 1rem;
+}
+
+.skill-tags span {
+    display: inline-block;
+    background-color: var(--bg-card); /* Yetenek kutuları koyu */
+    color: var(--accent-color);
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+}
+
+/* --- CV: ZAMAN ÇİZELGESİ (TIMELINE) --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin-top: 3rem;
+}
+
+/* Dikey Çizgi */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 2px;
+    height: 100%;
+    background: var(--border-color); /* Çizgi rengi koyulaştı */
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 3rem;
+}
+
+/* Noktalar */
+.timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--bg-main); /* İçi boş gibi görünsün */
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(255, 159, 67, 0.3);
+}
+
+.education-dot {
+     border-color: var(--text-muted);
+     box-shadow: none;
+}
+
+.timeline-date {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+}
+
+.timeline-content {
+    background: var(--bg-card); /* Kart arka planı koyu */
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color); /* İnce çerçeve */
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+
+/* --- BLOG BÖLÜMÜ: KARTLAR --- */
+.section-subtitle {
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-muted);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.blog-card {
+    background: var(--bg-card); /* Blog kartı koyu */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color); /* Hover'da çerçeve rengi değişsin */
+}
+
+.blog-img {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Görseller biraz daha karanlık */
+    transition: opacity 0.3s ease;
+}
+.blog-card:hover .blog-img {
+    opacity: 1;
+}
+
+.blog-content {
+    padding: 1.8rem;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.blog-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+    line-height: 1.4;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+}
+
+.read-more i {
+    font-size: 0.9rem;
+    margin-left: 8px;
+    transition: margin-left 0.3s ease;
+}
+
+.read-more:hover i {
+    margin-left: 12px;
+}
+
+/* --- MOBİL UYUMLULUK (RESPONSIVE) --- */
+@media (max-width: 992px) {
+    .content {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 3rem 1rem;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .timeline::before {
+        left: 10px;
+    }
+    .timeline-item {
+        padding-left: 35px;
+    }
+    .timeline-dot {
+        left: 1px;
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+}
