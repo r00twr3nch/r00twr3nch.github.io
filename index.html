@@ -90,18 +90,22 @@ title: Home
     <p class="section-subtitle">Thoughts on technology and cybersecurity.</p>
 
     <div class="blog-grid">
-        {% for post in site.posts limit:4 %}
-        <article class="blog-card">
-            <div class="blog-img" style="background-image: url('{{ post.image | default: 'https://via.placeholder.com/400x250/333' }}');"></div>
-            <div class="blog-content">
-                <span class="blog-date">{{ post.date | date: "%d %b %Y" }}</span>
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
-                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-        {% endfor %}
-    </div>
+    {% for post in site.posts limit:4 %}
+    
+    {% assign post_image = post.image | default: 'https://via.placeholder.com/400x250/333' %}
+    
+    <article class="blog-card">
+        <div class="blog-img" style="background-image: url('{{ post_image }}');"></div>
+        
+        <div class="blog-content">
+            <span class="blog-date">{{ post.date | date: "%d %b %Y" }}</span>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </article>
+    {% endfor %}
+</div>
     
     {% if site.posts.size == 0 %}
     <p style="text-align:center; color:#666;">No blog posts found yet.</p>
