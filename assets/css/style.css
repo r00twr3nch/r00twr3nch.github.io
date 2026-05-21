@@ -9,7 +9,7 @@
     --text-muted: #a0a0a0;    /* İkincil metinler, tarihler vs. */
     --text-heading: #ffffff;  /* Başlıklar (Tam beyaz) */
 
-    --accent-color: #ff9f43;  /* Vurgu rengi (Daha sıcak bir turuncu/altın, koyuda iyi durur) */
+    --accent-color: #1e3a8a;  /* Vurgu rengi (Navy Blue) */
     --border-color: #333333;  /* Çizgiler ve kenarlıklar için */
 
     --sidebar-width: 300px;
@@ -25,7 +25,7 @@ body.light-theme {
     --text-main: #333333;
     --text-muted: #666666;
     --text-heading: #000000;
-    --accent-color: #ff6b35;
+    --accent-color: #2563eb;  /* Navy Blue for light theme */
     --border-color: #e0e0e0;
 }
 
@@ -91,8 +91,8 @@ body.light-theme {
 }
 
 @keyframes glow {
-    0%, 100% { box-shadow: 0 0 10px rgba(255, 159, 67, 0.3); }
-    50% { box-shadow: 0 0 20px rgba(255, 159, 67, 0.6); }
+    0%, 100% { box-shadow: 0 0 10px rgba(30, 58, 138, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(30, 58, 138, 0.6); }
 }
 
 .animate-fade-in-up {
@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .theme-toggle:hover {
     transform: rotate(20deg) scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 159, 67, 0.5);
+    box-shadow: 0 0 15px rgba(30, 58, 138, 0.5);
 }
 
 body.light-theme .theme-toggle i::before {
@@ -194,14 +194,14 @@ body.light-theme .theme-toggle i::before {
     border: 3px solid var(--accent-color);
     margin-bottom: 1.5rem;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(255, 159, 67, 0.2);
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.2);
     transition: all 0.3s ease;
     animation: glow 3s ease-in-out infinite;
 }
 
 .profile-img:hover {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 30px rgba(255, 159, 67, 0.5);
+    box-shadow: 0 0 30px rgba(30, 58, 138, 0.5);
 }
 
 .name {
@@ -342,7 +342,7 @@ body.light-theme .theme-toggle i::before {
 .skill-tags span:hover {
     transform: translateY(-5px) scale(1.1);
     border-color: var(--accent-color);
-    box-shadow: 0 8px 20px rgba(255, 159, 67, 0.3);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
 }
 
 /* --- CV: ZAMAN ÇİZELGESİ (TIMELINE) --- */
@@ -377,9 +377,9 @@ body.light-theme .theme-toggle i::before {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: var(--bg-main); /* İçi boş gibi görünsün */
+    background: var(--bg-main);
     border: 3px solid var(--accent-color);
-    box-shadow: 0 0 10px rgba(255, 159, 67, 0.3);
+    box-shadow: 0 0 10px rgba(30, 58, 138, 0.3);
     transition: all 0.3s ease;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -437,16 +437,16 @@ body.light-theme .theme-toggle i::before {
     letter-spacing: 0.5px;
     padding: 4px 10px;
     border-radius: 20px;
-    background-color: rgba(255, 159, 67, 0.15); /* Vurgu renginin şeffaf hali */
-    color: var(--accent-color); /* Turuncu yazı */
-    border: 1px solid rgba(255, 159, 67, 0.3);
+    background-color: rgba(30, 58, 138, 0.15);
+    color: var(--accent-color);
+    border: 1px solid rgba(30, 58, 138, 0.3);
     transition: all 0.3s ease;
 }
 
 /* Karta hover yapınca etiket parlasın */
 .blog-card:hover .category-badge {
     background-color: var(--accent-color);
-    color: #121212; /* Arka plan koyu olduğu için yazı siyah olsun */
+    color: #121212;
 }
 .section-subtitle {
     margin-top: -1.5rem;
