@@ -150,6 +150,15 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
 }
 
+/* --- SIDEBAR --- */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-sidebar);
+    padding: 3rem 2.5rem;
+    border-right: 1px solid var(--border-color);
+    position: relative;
+}
+
 /* --- THEME TOGGLE BUTTON --- */
 .theme-toggle {
     position: absolute;
