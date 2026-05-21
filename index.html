@@ -85,6 +85,53 @@ title: Home
     </div>
 </section>
 
+<section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">A selection of projects showcasing my technical skills and creativity.</p>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3 class="project-title">🔐 Cybersecurity Audit Suite</h3>
+            <p class="project-description">Comprehensive security auditing toolkit developed during internship at Normsight. Automated vulnerability scanning and compliance checking.</p>
+            <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Security</span>
+                <span class="project-tag">Scripting</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">🌐 Backend API Development</h3>
+            <p class="project-description">RESTful API built with ASP.NET for corporate projects. Designed database schema and optimized query performance.</p>
+            <div class="project-tags">
+                <span class="project-tag">ASP.NET</span>
+                <span class="project-tag">C#</span>
+                <span class="project-tag">API Design</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">🎨 Web Design & WordPress Customization</h3>
+            <p class="project-description">Frontend development and WordPress theme customization for multiple clients. Focus on responsive design and UX optimization.</p>
+            <div class="project-tags">
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">WordPress</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">🔗 Network Infrastructure Manager</h3>
+            <p class="project-description">ERP support tools for managing network infrastructure. Developed monitoring systems and automation scripts for device communication.</p>
+            <div class="project-tags">
+                <span class="project-tag">Linux</span>
+                <span class="project-tag">Networking</span>
+                <span class="project-tag">DevOps</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="blog" class="section blog-section">
     <h2 class="section-title">Latest Articles</h2>
     <p class="section-subtitle">Thoughts on technology and cybersecurity.</p>
@@ -116,4 +163,30 @@ title: Home
     {% if site.posts.size == 0 %}
     <p style="text-align:center; color:#666;">No blog posts found yet.</p>
     {% endif %}
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Have a question or want to collaborate? Feel free to reach out!</p>
+
+    <div class="contact-section">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
 </section>
